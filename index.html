@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="city">
+        <li onclick="showWeather('Tashkent', 0)" class="active">Toshkent</li>
+        <li onclick="showWeather('Urgench', 1)">Urganch</li>
+        <li onclick="showWeather('Samarkand', 2)">Samarqand</li>
+        <li onclick="showWeather('Bukhara', 3)">Buxoro</li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="daily">
+        <div class="top">
+          <h2 class="selected_city">Toshkent</h2>
+          <p>Bugun, 10-avgust</p>
+          <p>
+            <img src="./images/cloudy.png" alt="Cloudy" /><span class="day"
+              >+33° </span
+            ><span>+24°</span>
+          </p>
+          <p class="weather__type">Bulutli</p>
+        </div>
+        <hr />
+        <div class="middle">
+          <p id="current">Hozirgi harorat:</p>
+          <p id="humidity">Namlik: 14%</p>
+          <p id="wind">Shamol: 6.9 m/s</p>
+          <p id="pressure">Bosim: 756 mm sim. ust.</p>
+          <p id="sunrise">Quyosh chiqishi: 05:45</p>
+          <p id="sunset">Quyosh botishi: 19:52</p>
+        </div>
+        <hr />
+        <div class="bottom">
+          <div class="bottom_item">
+            <span>Tong</span>
+            <img src="./images/cloudy.png" alt="Cloudy" />
+            <span>29°</span>
+          </div>
+          <div class="bottom_item">
+            <span>Kun</span>
+            <img src="./images/cloudy.png" alt="Cloudy" />
+            <span>29°</span>
+          </div>
+          <div class="bottom_item">
+            <span>Oqshom</span>
+            <img src="./images/clear.png" alt="Cloudy" />
+            <span>29°</span>
+          </div>
+        </div>
+      </section>
+      <section class="weekly">
+        <h2>Haftalik ob-havo ma'lumoti</h2>
+        <table>
+          <tr>
+            <td>Kun</td>
+            <td>Harorat</td>
+            <td>Tavsif</td>
+            <td>Yog'ingarchilik</td>
+          </tr>
+          <tr>
+            <td>
+              <span>Ertaga</span>
+              <span>11-avgust</span>
+            </td>
+            <td>
+              <span>+33°</span>
+              <span>+24°</span>
+            </td>
+            <td>ochiq havo</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>
+              <span>Juma</span>
+              <span>12-avgust</span>
+            </td>
+            <td>
+              <span>+33°</span>
+              <span>+24°</span>
+            </td>
+            <td>ochiq havo</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>
+              <span>Shanba</span>
+              <span>13-avgust</span>
+            </td>
+            <td>
+              <span>+33°</span>
+              <span>+24°</span>
+            </td>
+            <td>ochiq havo</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>
+              <span>Yakshanba</span>
+              <span>14-avgust</span>
+            </td>
+            <td>
+              <span>+33°</span>
+              <span>+24°</span>
+            </td>
+            <td>ochiq havo</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>
+              <span>Dushanba</span>
+              <span>15-avgust</span>
+            </td>
+            <td>
+              <span>+33°</span>
+              <span>+24°</span>
+            </td>
+            <td>ochiq havo</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>
+              <span>Seshanba</span>
+              <span>16-avgust</span>
+            </td>
+            <td>
+              <span>+33°</span>
+              <span>+24°</span>
+            </td>
+            <td>ochiq havo</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>
+              <span>Chorshanba</span>
+              <span>17-avgust</span>
+            </td>
+            <td>
+              <span>+33°</span>
+              <span>+24°</span>
+            </td>
+            <td>ochiq havo</td>
+            <td>0%</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
