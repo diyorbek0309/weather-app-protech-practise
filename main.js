@@ -10,6 +10,7 @@ const sunset = document.getElementById("sunset");
 const hPa = 0.750062;
 
 const API_KEY = "5fced8cbe8dc41c5834a87f5e5464752";
+const API_KEY_WEEKLY = "2d02a0d0079a9b2ee976f670c37d4176";
 let currentWeather = {};
 
 async function getTashkent() {
@@ -90,3 +91,6 @@ async function sendRequest(city) {
   return result;
 }
 
+fetch(`https://dataservice.accuweather.com/locations/v1/adminareas/uz`)
+  .then((response) => response.json())
+  .then((data) => console.log(data));

@@ -12,12 +12,13 @@ p {
 span {
   font-size: 18px;
   font-weight: bold;
-} 
+}
 
 body {
   height: 100vh;
-  /* background: linear-gradient(rgba(225, 225, 225, 0.5), rgba(220, 225, 220, 0.4)); */
-  background: linear-gradient(rgba(20, 5, 229, 0.2), rgba(20, 5, 229, 0.4));
+  background-image: url("./images/blue-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 main {
@@ -30,21 +31,28 @@ main {
   justify-content: center;
   list-style: none;
   font-size: 2rem;
+  color: #fff;
 }
-
+.city ul {
+  border: 1px solid rgb(198, 198, 232);
+  border-radius: 5px;
+}
 .city li {
   margin: 1rem;
   cursor: pointer;
   transition: 0.5s ease;
+  padding: 00.3rem;
 }
 
 .city .active {
-  color: darkgreen;
-  background-color: aqua;
+  border: #aaa;
+  border-radius: 5px;
+  color: rgb(108, 116, 152);
+  background-color: rgb(220, 229, 242);
 }
 
-.city li:hover{
-  color: brown;
+.city li:hover {
+  color: rgb(107, 106, 106);
 }
 
 .bottom {
@@ -65,16 +73,22 @@ main {
 
 .daily {
   margin-right: 2rem;
-  /* background-color: antiquewhite; */
-  background: linear-gradient(rgba(50, 109, 219, 0.9), rgba(28, 99, 212, 0.6));
-  padding: 2rem 1rem;
-  /* height: 450px;  */
+  background: linear-gradient(rgba(201, 203, 207, 0.9), rgba(28, 99, 212, 0.6));
+  padding: 2rem;
   border-radius: 5px;
+  color: #fff;
+  box-shadow: 5px 6px 6px 6px rgb(190, 211, 244);
+}
+
+main h2 {
+  padding-bottom: 1rem;
+}
+main p {
+  padding-bottom: 0.2rem;
 }
 
 .daily .middle p {
-  font-size: 20px;
-  /* font-weight: bold; */
+  font-size: 1.2prem;
 }
 
 .top {
@@ -91,10 +105,19 @@ main {
 
 .weekly {
   display: flex;
-  /* background-color: aqua; */
-  background: linear-gradient(rgba(150, 19, 29, 0.5), rgba(218, 199, 212, 0.3));
+  background: linear-gradient(
+    rgba(243, 251, 249, 0.5),
+    rgba(218, 199, 212, 0.3)
+  );
   flex-direction: column;
   border-radius: 5px;
+  padding: 2rem 1rem 0.5rem;
+  color: #fff;
+  box-shadow: 5px 6px 6px 6px rgb(190, 211, 244);
+}
+table tr:first-child {
+  font-size: 1.3rem;
+  color: rgb(225, 218, 211);
 }
 
 tr {
